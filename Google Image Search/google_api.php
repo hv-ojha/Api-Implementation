@@ -13,6 +13,6 @@
 */
 
  //GOOGLE API KEY
- $apikey = "AIzaSyCQvqCTHb40cL5tcjRhS8C6I01V97ogPqQ";
+ $apikey = "[YOUR API KEY]";
  $search_url = "https://cse.google.com/cse?cx=010614952286963563739:nkn8ugeifac";
 ?>
