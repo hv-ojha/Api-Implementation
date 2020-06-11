@@ -9,12 +9,8 @@ if(isset($_REQUEST["search"])) {
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-	//FACEBOOK API URL
-	// $url = "https://graph.facebook.com/harshvardhan.ojha.1?access_token=990e59ae15a89194388093fb2b2b0086";
-
-
 	//GOOGLE API KEY
-	$apikey = "AIzaSyCQvqCTHb40cL5tcjRhS8C6I01V97ogPqQ";
+	$apikey = "[YOUR API KEY]";
 
 	//KEYWORD TO SEARCH
 	$keyword = $_REQUEST["text_search"];
@@ -33,13 +29,6 @@ if(isset($_REQUEST["search"])) {
 
 	$arr = json_decode($result, true);
 
-	// echo "<pre>";
-	// print_r($arr);
-	// echo "</pre>";
-
-	// foreach ($arr["items"] as $val) {
-	// 	echo $val["title"]."\n";
-	// }
 	echo "<pre>";
 	$search_results = $arr["items"];
 	foreach ($search_results as $val) {
